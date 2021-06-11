@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import  './GameCardContainer.css'
 import GameCard from './GameCard'
+import WishlistGameCard from './WishlistGameCard'
 
 const GameCardContainer = () => {
 
@@ -35,7 +36,10 @@ const GameCardContainer = () => {
         return <GameCard key={idx} game = {game} />
         }
      )
- }
+    }
+
+    
+
 
 
 
