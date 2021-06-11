@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar-brand {
+  padding-left: 20px;
+}
+
+.navbar-links {
+  padding-left: 50px;
+}
+

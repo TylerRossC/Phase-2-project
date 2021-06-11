@@ -1,23 +1,46 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import {Switch, Route} from 'react-router-dom'
+import GameCardContainer from './Components/GameCardContainer'
+import Homepage from './Components/Homepage'
+import Wishlist from './Components/Wishlist'
+import {Navbar, Nav} from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
+
+
+const App = () => {
+  
+ 
+  
+  
+  
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Navbar bg="dark" variant="dark">
+        <Navbar.Brand href="/Homepage">GameOn!</Navbar.Brand>
+        <Nav className="navbar-links">
+          <Nav.Link href="/Homepage">Home</Nav.Link>
+          <Nav.Link href="/GameCardContainer">Games</Nav.Link>
+          <Nav.Link href="/Wishlist">Wishlist</Nav.Link>
+        </Nav>
+      </Navbar>
+    <Switch>
+      <Route path = '/GameCardContainer' component = {GameCardContainer}>
+        {/* <GameCardContainer /> */}
+      </Route>
+      <Route path = '/Homepage' component = {Homepage}>
+        {/* <Homepage /> */}
+      </Route>
+      <Route path = '/Wishlist' component = {Wishlist}>
+        {/* <Wishlist /> */}
+      </Route>
+    </Switch>
+    {/* <GameCardContainer /> */}
+
+      
+    
     </div>
   );
 }
