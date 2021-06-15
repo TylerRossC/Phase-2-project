@@ -1,8 +1,7 @@
-.game-card-container {
+.wishlist-container {
     background-color: #706f6f;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px;
   }
-

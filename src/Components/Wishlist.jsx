@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import WishlistGameCard from './WishlistGameCard'
+import GameCard from './GameCard'
+import './Wishlist.css'
 // import ListButton from './ListButton'
 
 
@@ -19,7 +21,7 @@ const Wishlist = () => {
 
     const renderWishlistGameCard = () => {
         return (wishlistGames.length === 0) ? null : wishlistGames.map( (game, idx) => {  
-            return <WishlistGameCard key={idx} game = {game} remove = {removeFromWishlist} />
+            return <GameCard key={idx} game = {game} remove = {removeFromWishlist} />
            }
         )
     }
@@ -57,7 +59,7 @@ const Wishlist = () => {
 
 
     return(
-        <div>
+        <div className = "wishlist-container">
             <h1>Wishlist</h1>
             {renderWishlistGameCard()}
         </div>

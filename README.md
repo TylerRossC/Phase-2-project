@@ -3,3 +3,15 @@
  
  
  ***To run this application on a live server, run command "yarn run dev"***
+
+
+
+
+
+ <!-- <div class = 'game-card'> 
+            {props.game.name}
+            <img class = 'game-image' src = {props.game.background_image} alt = '' />
+            <button onClick = {handleAddToWishlist} class = 'add-to-wishlist' >Add to Wishlist</button>
+            {/* <ListButton onClick = {handleAddToWishlist} class = 'add-to-wishlist' btnText = 'Add to Wishlist' /> */}
+            
+        </div> -->

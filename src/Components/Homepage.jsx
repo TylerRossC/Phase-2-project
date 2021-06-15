@@ -10,16 +10,13 @@ const Homepage = () => {
 
 
 
-
-
-
-
-
-
-
     return(
         <div>
-            <h1>Homepage</h1>
+        <br></br>
+            <h1>Welcome to GameON!</h1>
+            <br></br>
+            <br></br>
+            <h4>The app that allows you to create a list of games you want to purchase and play!</h4>
         </div>
         )
 }
