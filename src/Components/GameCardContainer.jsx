@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import  './GameCardContainer.css'
 import GameCard from './GameCard'
-import WishlistGameCard from './WishlistGameCard'
+// import WishlistGameCard from './WishlistGameCard'
 
 const GameCardContainer = () => {
 
@@ -33,7 +33,7 @@ const GameCardContainer = () => {
 
     const renderGameCard = () => {
      return (Object.keys(games).length === 0) ? null : games.results.map( (game, idx) => {  //https://www.geeksforgeeks.org/how-to-check-an-object-is-empty-using-javascript/
-        return <GameCard key={idx} game = {game} />
+        return <GameCard key = {idx} game = {game}  />
         }
      )
     }

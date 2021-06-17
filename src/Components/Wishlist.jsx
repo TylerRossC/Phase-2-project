@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import WishlistGameCard from './WishlistGameCard'
+// import WishlistGameCard from './WishlistGameCard'
 import GameCard from './GameCard'
 import './Wishlist.css'
 // import ListButton from './ListButton'

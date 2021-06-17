@@ -28,18 +28,18 @@ const btnText = () => {
 }
 
 
-
     
     return(
-    <div class = "card-container">
-        <MDBCard class = "card" style={{ maxWidth: '22rem' }}>
+    <div className = "card-container">
+        <MDBCard className = "card" style={{ maxWidth: '22rem' }}>
             <MDBCardImage src = {props.game.background_image} position='top' alt='...' />
             <MDBCardBody>
-                <MDBCardTitle class = "game-title"> {props.game.name} </MDBCardTitle>
+                <MDBCardTitle className = "game-title"> {props.game.name} </MDBCardTitle>
+                    <MDBCardBody className = "rating">Rating: {props.game.esrb_rating ? props.game.esrb_rating.name : ""} </MDBCardBody>
                     <MDBCardText>
-                        These are cards that show you games and their information.
+                        
                     </MDBCardText>
-                    <button onClick = {props.remove ? () => {props.remove(props.game.id)} : handleAddToWishlist}>{btnText()}</button>
+                    <button className = {props.remove ? "remove-from-wishlist" : "add-to-wishlist"} onClick = {props.remove ? () => {props.remove(props.game.id)} : handleAddToWishlist} >{btnText()}</button>
             {/* <button onClick = {handleAddToWishlist} class = 'add-to-wishlist' >Add to Wishlist</button> */}
             </MDBCardBody>
         </MDBCard>

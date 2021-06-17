@@ -15,16 +15,48 @@
     padding: 10px;
     border-radius: 50px;
     background: #0eb5e7;
-    color: white;
+    color: rgb(12, 1, 1);
     font-weight: bold;
     cursor: pointer;
     border: none;
     margin: 50px auto;
     border: 2px solid white;
+    
+}
+
+.add-to-wishlist:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.add-to-wishlist:active {
+    background: #0ee719;
+    transform: translateY(4px);
+}
+
+.remove-from-wishlist {
+    padding: 10px;
+    border-radius: 50px;
+    background: #0eb5e7;
+    color: rgb(12, 1, 1);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin: 50px auto;
+    border: 2px solid white;
+    
+}
+
+.remove-from-wishlist:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.remove-from-wishlist:active {
+    background: #e70505;
+    transform: translateY(4px);
 }
 
 .game-title {
-    color:crimson
+    color:crimson;
 }
 
 
